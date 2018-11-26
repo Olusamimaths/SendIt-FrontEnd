@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3E4F60;
+}
+* {
+  border: 0;
+}
+
+/*Navigation Styles*/
+
+nav ul {
+  width: 100%;
+  height: 3rem;
+  background: #3E4F60;
+  color: white;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0rem 4rem;
+  font-size: .8rem;
+  font-weight: bold;
+  flex-flow: wrap;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  flex: 0 0 auto;
+  margin-right: 2rem;
+}
+nav ul li:nth-child(1) {
+  margin-right: auto;
+}
+nav a {
+  color: #BBCADA;
+  text-decoration: none;
+}
+
+nav a:hover {
+ color:#F0EEE1;
+ cursor: pointer;
+}
+
+/* Hero Styles */
+
+#hero {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  
+  color:white;
+  display: flex;
+  text-align: center;
+}
+#lead_text {
+  margin: 10% auto;
+}
+#lead_text h2 {
+  font-size: 1.3rem;
+  margin-bottom: 5%;
+  color: #3E4F60;
+}
+#lead_text h1 {
+  font-size: 4rem;
+  margin: 0% 0% 10% 0%;
+  color: #F99F1C;
+}
+#get_started {
+  padding: 0.7rem;
+  background: #3E4F60;
+  color: #BBCADA;
+  font-weight: bold;
+  border: 4px solid #BBCADA;
+}
+#get_started:hover {
+  cursor: pointer;
+  color: #F0EEE1;
+}
+
+/*Three section ***/
+#column {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  color: #3E4F60;
+
+}
+.column_1 {
+  flex: 1;
+  padding: 1rem
+}
+.bordered {
+  border-right: 1px solid #F99F1C;
+}
+
+/** LOG IN **/
+#two_col {
+  display: flex;
+  z-index: 3;
+  height: auto;
+}
+
+
+#two_col .col_1{
+  flex: 2;
+  background: #F99F1C;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+#two_col .col_2{
+  padding: 2rem;
+  flex: 1;
+  background: #F0EEE1;
+  box-sizing: border-box;
+}
+
+label {
+ font-style: italic;
+}
+input[type=email], input[type=password], input[type=text] {
+  width: 90%;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid #3E4F60;
+  margin: 0.4rem 0.4rem 0.5rem 0.4rem;
+  transition: 1s;
+}
+
+input[type=email]:focus, input[type=password]:focus, input[type=text]:hover {
+  border: 2px solid #F99F1C;
+
+}
+
+#btn_login {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0rem;
+  background: #F99F1C;
+  color: #F0EEE1;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 1rem;
+  margin: 1rem 0rem;
+}
+button:hover {
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
+.center a {
+ 
+  color:#3E4F60;
+  text-decoration: none;
+}
+
+.center a:hover {
+  color: #BBCADA;
+ cursor: pointer;
+}
+
+/* CREATE ODER ***/
+#two_col_order {
+  display: flex;
+  height: auto;
+}
+
+
+#two_col_order .col_1{
+  flex: 1;
+  box-sizing: border-box;
+  padding: 3rem;
+}
+
+#two_col_order .col_2{
+  flex: 1;
+  box-sizing: border-box;
+}
+
+/* PROFILE PAGE ***/
+#actions {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.btn_action {
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  background: #F99F1C;
+  color: #F0EEE1;
+  margin-top: 0.8rem;
+  font-weight: bold;
+}
+
+#profile_column {
+  display: flex;
+  height: auto;
+  padding: 1rem;
+}
+
+#profile_column .col_1, #profile_column .col_2 , #profile_column .col_3{
+  flex: 1;
+  box-sizing: border-box;
+}
+
+#profile_column .col_2 h1, #profile_column .col_3 h1{
+  font-size: 4rem;
+  color: #F99F1C;
+}
+#welcome {
+  margin: 2rem;
+  text-decoration: underline;
+}
+/* Footer Styles **/
+footer {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: #3E4F60;
+  color: #BBCADA;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+/***** MEDIA QUERIES FOR RESPONSIVENES ***/
+@media screen and (max-width: 700px) {
+  #column {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .column_1 {
+    flex: 1;
+    padding: 0.5rem
+  }
+  .unbordered {
+    border-right: 1px solid #F99F1C;
+  }
+
+  /** Log in **/
+  #two_col {
+    flex-direction: column;
+  }
+  
+  
+  #two_col .col_1{
+    flex: 2;
+    background: #F99F1C;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+  
+  #two_col .col_2{
+    padding: 2rem;
+    flex: 1;
+    background: #F0EEE1;
+    box-sizing: border-box;
+  }
+  #profile_column {
+    flex-direction: column;
+  }
+
+  #profile_column .col_2 , #profile_column .col_3 {
+    text-align: justify
+  }
+  #two_col_order {
+    flex-direction: column;
+  }
+ }
